@@ -1,0 +1,20 @@
+#springmvc 文件上传 多媒体解析器 CommonMultipartResolver
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+#服务的端口
+server:
+  port: 9008
+# Eureka客户端的属性配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka
+  instance:
+    prefer-ip-address: true
+# 开启feign支持hystrix
+feign:
+  hystrix:
+    enabled: true
